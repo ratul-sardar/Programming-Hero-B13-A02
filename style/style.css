@@ -4,6 +4,7 @@
     --heading-color: hsla(0, 0%, 100%, 1);
     --text-color: hsla(0, 0%, 100%, 0.6);
     --bg: #1a0b2e;
+    --bg2: #230e3d;
     --gradient1: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
     --gradient1h: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
     --green: #00ff88;
@@ -35,6 +36,14 @@ h1 {
 
 h2 {
     font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 2.66vw, 2rem);
+}
+
+h4 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 /*unique class/id*/
@@ -95,10 +104,26 @@ h2 {
     color: var(--green);
 }
 
+.whyUsCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    background: rgba(53, 17, 101, 0.4);
+}
+
 /*using breakpoints matching tailwind*/
 
 @media screen and (min-width: 1280px) {
     .container {
         padding: 0;
+    }
+
+    .whyUsCards {
+        padding: 2.5rem;
+        border-radius: 2.5rem;
     }
 }
