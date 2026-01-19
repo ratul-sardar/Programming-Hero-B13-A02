@@ -5,6 +5,7 @@
     --text-color: hsla(0, 0%, 100%, 0.6);
     --bg: #1a0b2e;
     --bg2: #230e3d;
+    --bg3: #250d44;
     --gradient1: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
     --gradient1h: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
     --green: #00ff88;
@@ -115,6 +116,29 @@ h4 {
     background: rgba(53, 17, 101, 0.4);
 }
 
+.videoCard {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.videoCard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: var(--bg3);
+}
+
+.videoCard-content-time {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.videoCard-content-time img {
+    height: fit-content;
+}
+
 /*using breakpoints matching tailwind*/
 
 @media screen and (min-width: 1280px) {
@@ -125,5 +149,13 @@ h4 {
     .whyUsCards {
         padding: 2.5rem;
         border-radius: 2.5rem;
+    }
+
+    .videoCard {
+    }
+
+    .videoCard-content {
+        gap: 0.75rem;
+        padding: 1.5rem;
     }
 }
