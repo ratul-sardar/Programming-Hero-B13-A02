@@ -7,6 +7,7 @@
     --gradient1: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
     --gradient1h: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
     --green: #00ff88;
+    --line-color: #412567;
 }
 
 * {
@@ -33,7 +34,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem, 4vw, 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
 /*unique class/id*/
@@ -86,6 +87,12 @@ h2 {
 .btn2:hover {
     color: white;
     background-color: var(--green);
+}
+
+.numBadge {
+    font-size: clamp(2.543rem, 4vw, 3rem);
+    font-weight: 900;
+    color: var(--green);
 }
 
 /*using breakpoints matching tailwind*/
