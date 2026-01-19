@@ -1,45 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>TechWave</title>
-  </head>
-  <body>
-    <header class="">
-      <nav
-        class="container flex justify-between items-center py-4! border-b-[#412567]"
-      >
-        <div class="brandLogo max-w-[137px] md:max-w-full">
-          <img src="./assets/TechWave.png" alt="Brand Logo" />
-        </div>
-        <ul class="md:flex gap-8 text-white hidden">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Episodes</a></li>
-          <li><a href="#">Host</a></li>
-        </ul>
-        <button class="btn hidden! md:block!">
-          Subscribe <i class="fa-solid fa-arrow-right"></i>
-        </button>
-        <div class="text-white md:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
-    </header>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/index.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>TechWave</title>
+    </head>
+    <body>
+        <header class="border-b border-b-[#412567]">
+            <nav class="container flex justify-between items-center py-4!">
+                <div class="brandLogo max-w-[137px] md:max-w-full">
+                    <img src="./assets/TechWave.png" alt="Brand Logo" />
+                </div>
+                <ul class="md:flex gap-8 text-white hidden">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Host</a></li>
+                </ul>
+                <button class="btn hidden! md:block!">
+                    Subscribe <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="text-white md:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--tailwind class use korle bg image ashe na, tai image ta vanila css theke niya hoyeche-->
+            <section id="hero">
+                <div
+                    class="container flex flex-col justify-center items-center py-10! md:py-14! lg:py-28! text-center bg-cover bg-no-repeat bg-top sm:bg-center"
+                >
+                    <div class="relative max-sm:max-w-[200px] mb-6 lg:mb-10">
+                        <img
+                            src="./assets/hero-circle.png"
+                            alt="a modern gradent"
+                        />
+                        <img
+                            src="./assets/microphone.png"
+                            alt="a microphone"
+                            class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 max-sm:max-w-[46px]"
+                        />
+                    </div>
+                    <h1 class="mb-2">TechWave</h1>
+                    <p class="mb-6">
+                        Your daily dose of tech insights, productivity hacks,
+                        and personal growth
+                    </p>
+                    <div class="flex gap-2">
+                        <button class="btn">
+                            <i class="ph ph-spotify-logo"></i>Listen on Spotify
+                        </button>
+                        <button class="btn2">
+                            <i class="ph ph-envelope"></i>Subscribe
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

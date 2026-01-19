@@ -1,66 +1,97 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #1a0b2e;
-  --gradient1: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
-  --gradient1h: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+    --heading-color: hsla(0, 0%, 100%, 1);
+    --text-color: hsla(0, 0%, 100%, 0.6);
+    --bg: #1a0b2e;
+    --gradient1: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
+    --gradient1h: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+    --green: #00ff88;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "inter", sans-serif;
+    font-family: "inter", sans-serif;
 }
 
-header {
-  background-color: var(--bg);
+body {
+    color: var(--text-color);
+    background-color: var(--bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5vw, 3.75rem);
+}
+
+h2 {
+    font-size: 2rem, 4vw, 3rem;
+}
+
+/*unique class/id*/
+
+#hero > .container {
+    background-image: url("/assets/hero-bg.png");
+    max-width: 1600px;
 }
 
 /* common class/components */
+
 .container {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 12.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
 }
 
-.btn {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.1875;
-  color: white;
-  background-image: var(--gradient1);
-  border-radius: 999px;
-  padding: 0.75rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
-  cursor: pointer;
-  transition: background-image 0.3s ease-in-out;
+.btn,
+.btn2 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.1875;
+    color: white;
+    background-image: var(--gradient1);
+    border-radius: 999px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-image 0.3s ease-in-out;
 }
 
 .btn i {
-  transition: transform 0.3s ease-in-out;
+    font-size: 1.2rem;
 }
 
 .btn:hover {
-  background-image: var(--gradient1h);
+    background-image: var(--gradient1h);
 }
 
-.btn:hover i {
-  transform: rotate(-45deg);
+.btn2 {
+    background-image: none;
+    color: var(--green);
+    border: 1px solid var(--green);
 }
 
-@media screen and (max-width: 576px) {
-  .container {
-    padding: 0 1.25rem;
-  }
+.btn2:hover {
+    color: white;
+    background-color: var(--green);
 }
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
-  .container {
-    padding: 0 3.75rem;
-  }
+/*using breakpoints matching tailwind*/
+
+@media screen and (min-width: 1280px) {
+    .container {
+        padding: 0;
+    }
 }
