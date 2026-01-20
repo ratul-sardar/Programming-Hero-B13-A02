@@ -50,13 +50,13 @@ h4 {
 /*unique class/id*/
 
 #hero > .container {
-    background-image: url("./assets/hero-bg.png");
+    background-image: url("../assets/hero-bg.png");
     max-width: 1600px;
 }
 
 footer > .container {
     max-width: 1600px;
-    background-image: url("./assets/footer-bg.png");
+    background-image: url("../assets/footer-bg.png");
     background-position: center;
     background-size: cover;
 }
