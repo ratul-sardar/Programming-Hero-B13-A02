@@ -57,8 +57,6 @@ h4 {
 footer > .container {
     max-width: 1600px;
     background-image: url("../assets/footer-bg.png");
-    background-position: center;
-    background-size: cover;
 }
 
 /* common class/components */

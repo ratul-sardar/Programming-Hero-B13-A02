@@ -46,11 +46,11 @@
             <!--tailwind class use korle bg image ashe na, tai image ta vanila css theke niya hoyeche-->
             <section id="hero">
                 <div
-                    class="container flex flex-col justify-center items-center py-10! md:py-14! lg:py-28! text-center bg-cover bg-no-repeat bg-top sm:bg-center"
+                    class="container flex flex-col justify-center items-center py-10! md:py-14! lg:py-28! text-center bg-size-[auto_440px] bg-no-repeat bg-center sm:bg-center"
                 >
-                    <div class="relative max-sm:max-w-[200px] mb-6 lg:mb-10">
+                    <div class="relative max-md:max-w-[200px] mb-6 lg:mb-10">
                         <div
-                            class="absolute right-0 sm:right-6 top-0 sm:top-4 rounded-full"
+                            class="absolute right-0 md:right-6 top-0 md:top-4 rounded-full"
                         >
                             <div class="relative">
                                 <div
@@ -70,7 +70,7 @@
                         <img
                             src="./assets/microphone.png"
                             alt="a microphone"
-                            class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 max-sm:max-w-[46px]"
+                            class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 max-md:max-w-[46px]"
                         />
                     </div>
                     <h1 class="mb-2">TechWave</h1>
@@ -213,7 +213,7 @@
                             Featured Episodes
                         </h2>
                         <div
-                            class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
+                            class="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8"
                         >
                             <div class="videoCard">
                                 <div class="relative w-full pt-[56.25%]">
@@ -423,7 +423,9 @@
         </main>
 
         <footer class="bg-(--bg2)">
-            <div class="container py-10! sm:py-14! md:py-28!">
+            <div
+                class="container bg-cover bg-center bg-no-repeat py-10! sm:py-14! md:py-28!"
+            >
                 <!-- <img
           src="./assets/footer-bg.png"
           alt="footers background image"
