@@ -1,370 +1,453 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/index.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>TechWave</title>
-  </head>
-  <body>
-    <header class="border-b border-b-[--line-color]">
-      <nav class="container flex justify-between items-center py-4!">
-        <div class="brandLogo max-w-[137px] md:max-w-full">
-          <img src="./assets/TechWave.png" alt="Brand Logo" />
-        </div>
-        <ul class="md:flex gap-8 text-white hidden">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Episodes</a></li>
-          <li><a href="#">Host</a></li>
-        </ul>
-        <button class="btn hidden! md:block!">
-          Subscribe <i class="fa-solid fa-arrow-right"></i>
-        </button>
-        <div class="text-white md:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/index.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <title>TechWave</title>
+    </head>
+    <body>
+        <header class="border-b border-b-[--line-color]">
+            <nav class="container flex justify-between items-center py-4!">
+                <div class="brandLogo max-w-[137px] md:max-w-full">
+                    <img src="./assets/TechWave.png" alt="Brand Logo" />
+                </div>
+                <ul class="md:flex gap-8 text-white hidden">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Host</a></li>
+                </ul>
+                <button class="btn hidden! md:block!">
+                    Subscribe <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <div class="text-white md:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </header>
 
-    <main>
-      <!--tailwind class use korle bg image ashe na, tai image ta vanila css theke niya hoyeche-->
-      <section id="hero">
-        <div
-          class="container flex flex-col justify-center items-center py-10! md:py-14! lg:py-28! text-center bg-cover bg-no-repeat bg-top sm:bg-center"
-        >
-          <div class="relative max-sm:max-w-[200px] mb-6 lg:mb-10">
-            <div
-              class="absolute right-0 sm:right-6 top-0 sm:top-4 rounded-full"
-            >
-              <div class="relative">
+        <main>
+            <!--tailwind class use korle bg image ashe na, tai image ta vanila css theke niya hoyeche-->
+            <section id="hero">
                 <div
-                  class="absolute z-0 w-full h-full bg-(--green) animate-ping rounded-full opacity-30"
-                ></div>
-                <div
-                  class="bg-(--green) z-10 rounded-full py-2 px-4 text-[#1A0B2E] font-semibold sm:text-lg shadow-lg shadow-green-600/50"
+                    class="container flex flex-col justify-center items-center py-10! md:py-14! lg:py-28! text-center bg-cover bg-no-repeat bg-top sm:bg-center"
                 >
-                  NEW
+                    <div class="relative max-sm:max-w-[200px] mb-6 lg:mb-10">
+                        <div
+                            class="absolute right-0 sm:right-6 top-0 sm:top-4 rounded-full"
+                        >
+                            <div class="relative">
+                                <div
+                                    class="absolute z-0 w-full h-full bg-(--green) animate-ping rounded-full opacity-30"
+                                ></div>
+                                <div
+                                    class="bg-(--green) z-10 rounded-full py-2 px-4 text-[#1A0B2E] font-semibold sm:text-lg shadow-lg shadow-green-600/50"
+                                >
+                                    NEW
+                                </div>
+                            </div>
+                        </div>
+                        <img
+                            src="./assets/hero-circle.png"
+                            alt="a modern gradent"
+                        />
+                        <img
+                            src="./assets/microphone.png"
+                            alt="a microphone"
+                            class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 max-sm:max-w-[46px]"
+                        />
+                    </div>
+                    <h1 class="mb-2">TechWave</h1>
+                    <p class="mb-6">
+                        Your daily dose of tech insights, productivity hacks,
+                        and personal growth
+                    </p>
+                    <div class="flex gap-2">
+                        <button class="btn">
+                            <i class="ph ph-spotify-logo"></i>Listen on Spotify
+                        </button>
+                        <button class="btn2">
+                            <i class="ph ph-envelope"></i>Subscribe
+                        </button>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <img src="./assets/hero-circle.png" alt="a modern gradent" />
-            <img
-              src="./assets/microphone.png"
-              alt="a microphone"
-              class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 max-sm:max-w-[46px]"
-            />
-          </div>
-          <h1 class="mb-2">TechWave</h1>
-          <p class="mb-6">
-            Your daily dose of tech insights, productivity hacks, and personal
-            growth
-          </p>
-          <div class="flex gap-2">
-            <button class="btn">
-              <i class="ph ph-spotify-logo"></i>Listen on Spotify
-            </button>
-            <button class="btn2">
-              <i class="ph ph-envelope"></i>Subscribe
-            </button>
-          </div>
-        </div>
-      </section>
+            </section>
 
-      <section id="aboutUs">
-        <div class="container py-10! md:py-14! lg:pt-12! lg:pb-28! text-center">
-          <h2 class="mb-4">About the Podcast</h2>
-          <p class="mb-3 max-w-[700px] mx-auto">
-            TechWave is your go-to podcast for staying ahead in the fast-paced
-            world of technology. We break down complex topics into digestible
-            insights, explore productivity strategies that actually work, and
-            share stories of personal growth from industry leaders.
-          </p>
-          <p class="max-w-[700px] mx-auto">
-            Join thousands of young professionals and tech enthusiasts who start
-            their day with TechWave.
-          </p>
-          <div
-            class="w-full h-0.5 bg-(--line-color) my-10 sm:my-14 md:my-20"
-          ></div>
+            <section id="aboutUs">
+                <div
+                    class="container py-10! md:py-14! lg:pt-12! lg:pb-28! text-center"
+                >
+                    <h2 class="mb-4">About the Podcast</h2>
+                    <p class="mb-3 max-w-[700px] mx-auto">
+                        TechWave is your go-to podcast for staying ahead in the
+                        fast-paced world of technology. We break down complex
+                        topics into digestible insights, explore productivity
+                        strategies that actually work, and share stories of
+                        personal growth from industry leaders.
+                    </p>
+                    <p class="max-w-[700px] mx-auto">
+                        Join thousands of young professionals and tech
+                        enthusiasts who start their day with TechWave.
+                    </p>
+                    <div
+                        class="w-full h-0.5 bg-(--line-color) my-10 sm:my-14 md:my-20"
+                    ></div>
 
-          <div class="grid grid-cols-2 gap-10 sm:grid-cols-4">
-            <div class="">
-              <p class="numBadge">150K+</p>
-              <p>Monthly Listeners</p>
-            </div>
-            <div class="">
-              <p class="numBadge">200+</p>
-              <p>Episodes Published</p>
-            </div>
-            <div class="">
-              <p class="numBadge">4.9★</p>
-              <p>Average Rating</p>
-            </div>
-            <div class="">
-              <p class="numBadge">50+</p>
-              <p>Industry Experts</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="whyUs" class="bg-(--bg2) py-10 sm:py-14 md:py-28">
-        <div class="container">
-          <h2 class="text-center mb-4 sm:mb-6 md:mb-10">Why Choose TechWave</h2>
-          <div
-            class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 lg:gap-8"
-          >
-            <div class="whyUsCards lg:row-span-2">
-              <img src="./assets/headphone.png" alt="headphone icon" />
-              <h4>Premium Audio Quality</h4>
-              <p>
-                Experience crystal-clear sound with professional-grade recording
-                equipment and expert audio engineering. Every episode is
-                mastered for optimal listening across all devices and platforms.
-              </p>
-            </div>
-            <div class="whyUsCards lg:col-span-2">
-              <img src="./assets/device.png" alt="headphone icon" />
-              <h4>Mobile Friendly</h4>
-              <p>
-                Listen on the go with seamless mobile experience and offline
-                downloads.
-              </p>
-            </div>
-            <div class="whyUsCards lg:col-span-2">
-              <img src="./assets/location.png" alt="headphone icon" />
-              <h4>Global Community</h4>
-              <p>
-                Connect with tech enthusiasts from over 120 countries worldwide.
-              </p>
-            </div>
-            <div class="whyUsCards lg:col-span-2">
-              <img src="./assets/zap-fast.png" alt="headphone icon" />
-              <h4>Exclusive Interviews</h4>
-              <p>
-                Get unprecedented access to industry titans, startup founders,
-                and tech visionaries. Our host secures exclusive conversations
-                you won't find anywhere else, diving deep into their journeys,
-                failures, and success strategies.
-              </p>
-            </div>
-            <div class="whyUsCards sm:col-span-2 lg:col-span-1">
-              <img src="./assets/resource.png" alt="headphone icon" />
-              <h4>Rich Resources</h4>
-              <p>
-                Access show notes, transcripts, and additional learning
-                materials for every episode.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="moreAboutUs"
-        class="py-10 sm:py-14 md:py-28 space-y-10 sm:space-y-14 md:space-y-28"
-      >
-        <div class="container space-y-14 sm:space-y-20 md:space-y-28">
-          <section id="Feature">
-            <h2 class="text-center mb-6 sm:mb-8 md:mb-10">Featured Episodes</h2>
-            <div class="flex flex-col gap-4 md:flex-row md:gap-6 lg:gap-8">
-              <div class="videoCard">
-                <iframe
-                  width="100%"
-                  height="fit-content"
-                  src="https://www.youtube.com/embed/MFsYaRnrcPQ"
-                  title=".NET in 100 Seconds"
-                  frameborder="0"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-                <div class="videoCard-content">
-                  <h4>The Future of AI in Everyday Life</h4>
-                  <p>
-                    Exploring how artificial intelligence is transforming our
-                    daily routines and what to expect in the next decade.
-                  </p>
-                  <div class="videoCard-content-time">
-                    <img src="./assets/clock.png" alt="clock icon" />
-                    <p>42 min</p>
-                  </div>
+                    <div class="grid grid-cols-2 gap-10 sm:grid-cols-4">
+                        <div class="">
+                            <p class="numBadge">150K+</p>
+                            <p>Monthly Listeners</p>
+                        </div>
+                        <div class="">
+                            <p class="numBadge">200+</p>
+                            <p>Episodes Published</p>
+                        </div>
+                        <div class="">
+                            <p class="numBadge">4.9★</p>
+                            <p>Average Rating</p>
+                        </div>
+                        <div class="">
+                            <p class="numBadge">50+</p>
+                            <p>Industry Experts</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="videoCard">
-                <iframe
-                  width="100%"
-                  height="fit-content"
-                  src="https://www.youtube.com/embed/MFsYaRnrcPQ"
-                  title=".NET in 100 Seconds"
-                  frameborder="0"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-                <div class="videoCard-content">
-                  <h4>The Future of AI in Everyday Life</h4>
-                  <p>
-                    Exploring how artificial intelligence is transforming our
-                    daily routines and what to expect in the next decade.
-                  </p>
-                  <div class="videoCard-content-time">
-                    <img src="./assets/clock.png" alt="clock icon" />
-                    <p>42 min</p>
-                  </div>
-                </div>
-              </div>
-              <div class="videoCard">
-                <iframe
-                  width="100%"
-                  height="fit-content"
-                  src="https://www.youtube.com/embed/MFsYaRnrcPQ"
-                  title=".NET in 100 Seconds"
-                  frameborder="0"
-                  allow="
-                    accelerometer;
-                    autoplay;
-                    clipboard-write;
-                    encrypted-media;
-                    gyroscope;
-                    picture-in-picture;
-                    web-share;
-                  "
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-                <div class="videoCard-content">
-                  <h4>The Future of AI in Everyday Life</h4>
-                  <p>
-                    Exploring how artificial intelligence is transforming our
-                    daily routines and what to expect in the next decade.
-                  </p>
-                  <div class="videoCard-content-time">
-                    <img src="./assets/clock.png" alt="clock icon" />
-                    <p>42 min</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+            </section>
 
-          <section id="host" class="">
-            <h2 class="text-center mb-6 sm:mb-8 md:mb-10">Meet the Host</h2>
-            <div
-              class="flex flex-col items-center md:items-start gap-4 p-6 rounded-3xl md:flex-row md:gap-6 md:p-10 md:rounded-[2.5rem] bg-(--bg3)"
+            <section id="whyUs" class="bg-(--bg2) py-10 sm:py-14 md:py-28">
+                <div class="container">
+                    <h2 class="text-center mb-4 sm:mb-6 md:mb-10">
+                        Why Choose TechWave
+                    </h2>
+                    <div
+                        class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 lg:gap-8"
+                    >
+                        <div class="whyUsCards lg:row-span-2">
+                            <img
+                                src="./assets/headphone.png"
+                                alt="headphone icon"
+                            />
+                            <h4>Premium Audio Quality</h4>
+                            <p>
+                                Experience crystal-clear sound with
+                                professional-grade recording equipment and
+                                expert audio engineering. Every episode is
+                                mastered for optimal listening across all
+                                devices and platforms.
+                            </p>
+                        </div>
+                        <div class="whyUsCards lg:col-span-2">
+                            <img
+                                src="./assets/device.png"
+                                alt="headphone icon"
+                            />
+                            <h4>Mobile Friendly</h4>
+                            <p>
+                                Listen on the go with seamless mobile experience
+                                and offline downloads.
+                            </p>
+                        </div>
+                        <div class="whyUsCards lg:col-span-2">
+                            <img
+                                src="./assets/location.png"
+                                alt="headphone icon"
+                            />
+                            <h4>Global Community</h4>
+                            <p>
+                                Connect with tech enthusiasts from over 120
+                                countries worldwide.
+                            </p>
+                        </div>
+                        <div class="whyUsCards lg:col-span-2">
+                            <img
+                                src="./assets/zap-fast.png"
+                                alt="headphone icon"
+                            />
+                            <h4>Exclusive Interviews</h4>
+                            <p>
+                                Get unprecedented access to industry titans,
+                                startup founders, and tech visionaries. Our host
+                                secures exclusive conversations you won't find
+                                anywhere else, diving deep into their journeys,
+                                failures, and success strategies.
+                            </p>
+                        </div>
+                        <div class="whyUsCards sm:col-span-2 lg:col-span-1">
+                            <img
+                                src="./assets/resource.png"
+                                alt="headphone icon"
+                            />
+                            <h4>Rich Resources</h4>
+                            <p>
+                                Access show notes, transcripts, and additional
+                                learning materials for every episode.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                id="moreAboutUs"
+                class="py-10 sm:py-14 md:py-28 space-y-10 sm:space-y-14 md:space-y-28"
             >
-              <img
-                src="./assets/host.png"
-                alt="profile picture of the host"
-                class="max-w-[150px] md:max-w-full"
-              />
-              <div
-                class="space-y-4 max-w-100 md:max-w-full text-center md:text-left"
-              >
-                <h3 class="">Alex Kumar</h3>
-                <p class="">
-                  Tech entrepreneur, productivity expert, and lifelong learner.
-                  Alex has been in the tech industry for over 10 years, working
-                  with startups and Fortune 500 companies. Through TechWave,
-                  Alex shares insights from industry leaders and practical
-                  advice for anyone looking to grow in tech.
-                </p>
-                <div class="flex gap-2 justify-center md:justify-start">
-                  <div
-                    class="rounded-full border border-gray-500 w-10 h-10 flex justify-center items-center"
-                  >
-                    <img src="./assets/linkedin.png" alt="linkedin icon" />
-                  </div>
-                  <div
-                    class="rounded-full border border-gray-500 w-10 h-10 flex justify-center items-center"
-                  >
-                    <img src="./assets/x.png" alt="linkedin icon" />
-                  </div>
-                  <div
-                    class="rounded-full border border-gray-500 w-10 h-10 flex justify-center items-center"
-                  >
-                    <img src="./assets/instagram.png" alt="linkedin icon" />
-                  </div>
-                  <div
-                    class="rounded-full border border-gray-500 w-10 h-10 flex justify-center items-center"
-                  >
-                    <img src="./assets/youtube.png" alt="linkedin icon" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
-    </main>
+                <div class="container space-y-14 sm:space-y-20 md:space-y-28">
+                    <section id="Feature">
+                        <h2 class="text-center mb-6 sm:mb-8 md:mb-10">
+                            Featured Episodes
+                        </h2>
+                        <div
+                            class="flex flex-col gap-4 md:flex-row md:gap-6 lg:gap-8"
+                        >
+                            <div class="videoCard">
+                                <iframe
+                                    width="100%"
+                                    height="fit-content"
+                                    src="https://www.youtube.com/embed/MFsYaRnrcPQ"
+                                    title=".NET in 100 Seconds"
+                                    frameborder="0"
+                                    allow="
+                                        accelerometer;
+                                        autoplay;
+                                        clipboard-write;
+                                        encrypted-media;
+                                        gyroscope;
+                                        picture-in-picture;
+                                        web-share;
+                                    "
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                                <div class="videoCard-content">
+                                    <h4>The Future of AI in Everyday Life</h4>
+                                    <p>
+                                        Exploring how artificial intelligence is
+                                        transforming our daily routines and what
+                                        to expect in the next decade.
+                                    </p>
+                                    <div class="videoCard-content-time">
+                                        <img
+                                            src="./assets/clock.png"
+                                            alt="clock icon"
+                                        />
+                                        <p>42 min</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="videoCard">
+                                <iframe
+                                    width="100%"
+                                    height="fit-content"
+                                    src="https://www.youtube.com/embed/MFsYaRnrcPQ"
+                                    title=".NET in 100 Seconds"
+                                    frameborder="0"
+                                    allow="
+                                        accelerometer;
+                                        autoplay;
+                                        clipboard-write;
+                                        encrypted-media;
+                                        gyroscope;
+                                        picture-in-picture;
+                                        web-share;
+                                    "
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                                <div class="videoCard-content">
+                                    <h4>The Future of AI in Everyday Life</h4>
+                                    <p>
+                                        Exploring how artificial intelligence is
+                                        transforming our daily routines and what
+                                        to expect in the next decade.
+                                    </p>
+                                    <div class="videoCard-content-time">
+                                        <img
+                                            src="./assets/clock.png"
+                                            alt="clock icon"
+                                        />
+                                        <p>42 min</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="videoCard">
+                                <iframe
+                                    width="100%"
+                                    height="fit-content"
+                                    src="https://www.youtube.com/embed/MFsYaRnrcPQ"
+                                    title=".NET in 100 Seconds"
+                                    frameborder="0"
+                                    allow="
+                                        accelerometer;
+                                        autoplay;
+                                        clipboard-write;
+                                        encrypted-media;
+                                        gyroscope;
+                                        picture-in-picture;
+                                        web-share;
+                                    "
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                                <div class="videoCard-content">
+                                    <h4>The Future of AI in Everyday Life</h4>
+                                    <p>
+                                        Exploring how artificial intelligence is
+                                        transforming our daily routines and what
+                                        to expect in the next decade.
+                                    </p>
+                                    <div class="videoCard-content-time">
+                                        <img
+                                            src="./assets/clock.png"
+                                            alt="clock icon"
+                                        />
+                                        <p>42 min</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-    <footer class="bg-(--bg2)">
-      <div
-        class="container flex flex-col items-center py-10! sm:py-14! md:py-28!"
-      >
-        <!-- <img
+                    <section id="host" class="">
+                        <h2 class="text-center mb-6 sm:mb-8 md:mb-10">
+                            Meet the Host
+                        </h2>
+                        <div
+                            class="flex flex-col items-center md:items-start gap-4 p-6 rounded-3xl md:flex-row md:gap-6 md:p-10 md:rounded-[2.5rem] bg-(--bg3)"
+                        >
+                            <img
+                                src="./assets/host.png"
+                                alt="profile picture of the host"
+                                class="max-w-[150px] md:max-w-full"
+                            />
+                            <div
+                                class="space-y-4 max-w-100 md:max-w-full text-center md:text-left"
+                            >
+                                <h3 class="">Alex Kumar</h3>
+                                <p class="">
+                                    Tech entrepreneur, productivity expert, and
+                                    lifelong learner. Alex has been in the tech
+                                    industry for over 10 years, working with
+                                    startups and Fortune 500 companies. Through
+                                    TechWave, Alex shares insights from industry
+                                    leaders and practical advice for anyone
+                                    looking to grow in tech.
+                                </p>
+                                <div
+                                    class="flex gap-2 justify-center md:justify-start"
+                                >
+                                    <div
+                                        class="rounded-full border border-gray-500 w-10 h-10 flex justify-center items-center"
+                                    >
+                                        <img
+                                            src="./assets/linkedin.png"
+                                            alt="linkedin icon"
+                                        />
+                                    </div>
+                                    <div
+                                        class="rounded-full border border-gray-500 w-10 h-10 flex justify-center items-center"
+                                    >
+                                        <img
+                                            src="./assets/x.png"
+                                            alt="linkedin icon"
+                                        />
+                                    </div>
+                                    <div
+                                        class="rounded-full border border-gray-500 w-10 h-10 flex justify-center items-center"
+                                    >
+                                        <img
+                                            src="./assets/instagram.png"
+                                            alt="linkedin icon"
+                                        />
+                                    </div>
+                                    <div
+                                        class="rounded-full border border-gray-500 w-10 h-10 flex justify-center items-center"
+                                    >
+                                        <img
+                                            src="./assets/youtube.png"
+                                            alt="linkedin icon"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-(--bg2)">
+            <div class="container py-10! sm:py-14! md:py-28!">
+                <!-- <img
           src="./assets/footer-bg.png"
           alt="footers background image"
           class="max-w-52 lg:max-w-full bg-cover"
         /> -->
-        <div class="flex flex-col gap-6 md:gap-8 items-center">
-          <img src="./assets/TechWave(Footer).png" alt="Brand Logo" />
-          <div
-            class="grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-5 md:gap-10"
-          >
-            <div class="flex gap-2 items-center">
-              <img src="./assets/spotify.png" alt="spotify logo" />
-              <p>Spotify</p>
+                <div class="flex flex-col items-center gap-6 md:gap-8">
+                    <img
+                        src="./assets/TechWave(Footer).png"
+                        alt="Brand Logo"
+                        class="max-w-[220px] md:max-w-full"
+                    />
+                    <div
+                        class="grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-4 md:gap-10"
+                    >
+                        <div
+                            class="flex items-center gap-2 justify-self-center md:justify-self-end"
+                        >
+                            <img
+                                src="./assets/spotify.png"
+                                alt="spotify logo"
+                            />
+                            <p>Spotify</p>
+                        </div>
+                        <div
+                            class="flex gap-2 items-center justify-self-center"
+                        >
+                            <img
+                                src="./assets/apple-podcast.png"
+                                alt="spotify logo"
+                            />
+                            <p>Apple Podcasts</p>
+                        </div>
+                        <div
+                            class="flex gap-2 items-center justify-self-end md:justify-self-center"
+                        >
+                            <img
+                                src="./assets/youtube-podcast.png"
+                                alt="spotify logo"
+                            />
+                            <p>YouTube</p>
+                        </div>
+                        <div
+                            class="flex gap-2 items-center justify-self-center md:justify-self-start"
+                        >
+                            <img
+                                src="./assets/twitter.png"
+                                alt="spotify logo"
+                            />
+                            <p>Twitter</p>
+                        </div>
+                    </div>
+                    <p class="text-center">
+                        © 2026 TechWave Podcast. All rights reserved.
+                    </p>
+                </div>
             </div>
-            <div class="flex gap-2 items-center">
-              <img src="./assets/apple-podcast.png" alt="spotify logo" />
-              <p>Apple Podcasts</p>
-            </div>
-            <div class="flex gap-2 items-center">
-              <img src="./assets/youtube-podcast.png" alt="spotify logo" />
-              <p>YouTube</p>
-            </div>
-            <div class="flex gap-2 items-center">
-              <img src="./assets/twitter.png" alt="spotify logo" />
-              <p>Twitter</p>
-            </div>
-          </div>
-          <p class="text-center">
-            © 2026 TechWave Podcast. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-  </body>
+        </footer>
+    </body>
 </html>
