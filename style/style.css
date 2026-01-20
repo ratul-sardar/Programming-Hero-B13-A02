@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 :root {
-    --heading-color: hsla(0, 0%, 100%, 1);
-    --text-color: hsla(0, 0%, 100%, 0.6);
-    --bg: #1a0b2e;
-    --bg2: #230e3d;
-    --bg3: #250d44;
-    --gradient1: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
-    --gradient1h: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
-    --green: #00ff88;
-    --line-color: #412567;
+  --heading-color: hsla(0, 0%, 100%, 1);
+  --text-color: hsla(0, 0%, 100%, 0.6);
+  --bg: #1a0b2e;
+  --bg2: #230e3d;
+  --bg3: #250d44;
+  --gradient1: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
+  --gradient1h: linear-gradient(90deg, #f7e93f, #fb09b4, #9100f8);
+  --green: #00ff88;
+  --line-color: #412567;
 }
 
 * {
-    font-family: "inter", sans-serif;
+  font-family: "inter", sans-serif;
 }
 
 body {
-    color: var(--text-color);
-    background-color: var(--bg);
+  color: var(--text-color);
+  background-color: var(--bg);
 }
 
 h1,
@@ -27,135 +27,142 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--heading-color);
-    font-weight: 700;
+  color: var(--heading-color);
+  font-weight: 700;
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 h3 {
-    font-size: clamp(1.5rem, 2.66vw, 2rem);
+  font-size: clamp(1.5rem, 2.66vw, 2rem);
 }
 
 h4 {
-    font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 /*unique class/id*/
 
 #hero > .container {
-    background-image: url("/assets/hero-bg.png");
-    max-width: 1600px;
+  background-image: url("/assets/hero-bg.png");
+  max-width: 1600px;
+}
+
+footer > .container {
+  max-width: 1600px;
+  background-image: url("/assets/footer-bg.png");
+  background-position: center;
+  background-size: cover;
 }
 
 /* common class/components */
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.25rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .btn,
 .btn2 {
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.1875;
-    color: white;
-    background-image: var(--gradient1);
-    border-radius: 999px;
-    padding: 0.75rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    cursor: pointer;
-    transition: background-image 0.3s ease-in-out;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.1875;
+  color: white;
+  background-image: var(--gradient1);
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-image 0.3s ease-in-out;
 }
 
 .btn i {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .btn:hover {
-    background-image: var(--gradient1h);
+  background-image: var(--gradient1h);
 }
 
 .btn2 {
-    background-image: none;
-    color: var(--green);
-    border: 1px solid var(--green);
+  background-image: none;
+  color: var(--green);
+  border: 1px solid var(--green);
 }
 
 .btn2:hover {
-    color: white;
-    background-color: var(--green);
+  color: white;
+  background-color: var(--green);
 }
 
 .numBadge {
-    font-size: clamp(2.543rem, 4vw, 3rem);
-    font-weight: 900;
-    color: var(--green);
+  font-size: clamp(2.543rem, 4vw, 3rem);
+  font-weight: 900;
+  color: var(--green);
 }
 
 .whyUsCards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    background: rgba(53, 17, 101, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: rgba(53, 17, 101, 0.4);
 }
 
 .videoCard {
-    border-radius: 1.5rem;
-    overflow: hidden;
+  border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 .videoCard-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem;
-    background-color: var(--bg3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: var(--bg3);
 }
 
 .videoCard-content-time {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .videoCard-content-time img {
-    height: fit-content;
+  height: fit-content;
 }
 
 /*using breakpoints matching tailwind*/
 
 @media screen and (min-width: 1280px) {
-    .container {
-        padding: 0;
-    }
+  .container {
+    padding: 0;
+  }
 
-    .whyUsCards {
-        padding: 2.5rem;
-        border-radius: 2.5rem;
-    }
+  .whyUsCards {
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+  }
 
-    /*.videoCard {
+  /*.videoCard {
     }*/
 
-    .videoCard-content {
-        gap: 0.75rem;
-        padding: 1.5rem;
-    }
+  .videoCard-content {
+    gap: 0.75rem;
+    padding: 1.5rem;
+  }
 }
